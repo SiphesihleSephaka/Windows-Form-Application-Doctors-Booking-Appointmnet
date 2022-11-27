@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75CCD584-1C84-4C8A-B946-8E21C3B71E5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPatientDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPatientDetails.Designer.cs">
+      <DependentUpon>AdminPatientDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegisterDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegisterDoctor.Designer.cs">
+      <DependentUpon>AdminRegisterDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewDocBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewDocBooking.Designer.cs">
+      <DependentUpon>AdminViewDocBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewDoctors.Designer.cs">
+      <DependentUpon>AdminViewDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewFeedback.Designer.cs">
+      <DependentUpon>AdminViewFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocLogin.Designer.cs">
+      <DependentUpon>DocLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorBookings.Designer.cs">
+      <DependentUpon>DoctorBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorDetails.Designer.cs">
+      <DependentUpon>DoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPatientView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPatientView.Designer.cs">
+      <DependentUpon>DoctorPatientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocUpdateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocUpdateDetails.Designer.cs">
+      <DependentUpon>DocUpdateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationAndLogin.cs" />
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPatientDetails.resx">
+      <DependentUpon>AdminPatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegisterDoctor.resx">
+      <DependentUpon>AdminRegisterDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewDocBooking.resx">
+      <DependentUpon>AdminViewDocBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewDoctors.resx">
+      <DependentUpon>AdminViewDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewFeedback.resx">
+      <DependentUpon>AdminViewFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocLogin.resx">
+      <DependentUpon>DocLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorBookings.resx">
+      <DependentUpon>DoctorBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorDetails.resx">
+      <DependentUpon>DoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPatientView.resx">
+      <DependentUpon>DoctorPatientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocUpdateDetails.resx">
+      <DependentUpon>DocUpdateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\live-medical-screening-application-on-260nw-1388677202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-icons--download-44-free--premium-icons-on-iconfinder-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-sign-laptop-icon-stock-vector-166205404.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-logo-icon-design-vector-15613661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-logo-icon-design-vector-156136611.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-695939288-170667a.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
